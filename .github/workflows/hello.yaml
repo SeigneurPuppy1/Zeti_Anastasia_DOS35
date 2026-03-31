@@ -1,0 +1,10 @@
+name: Hello World #Имя воркфлоу
+on: push #Запуск при пуше
+
+jobs:
+  build:          #Имя задачи
+   runs-on: ubuntu-latest #На какой ОС запускать
+   
+
+   steps:
+     - run: echo "Привет гитхаб" 
