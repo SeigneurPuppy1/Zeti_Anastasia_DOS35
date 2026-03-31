@@ -1,4 +1,3 @@
-
 name: Hello Test #Имя проекта
 on: push #Отрабатывать при пуше
 
@@ -8,5 +7,5 @@ jobs:
 
 
   steps:
-   -run: tar -czvf practice.tar.gz practice/ #Какая команда выполнится при пуше
+   - run: tar -czvf practice.tar.gz practice/ #Какая команда выполнится при пуше
   
