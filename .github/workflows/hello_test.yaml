@@ -7,5 +7,5 @@ jobs:
 
 
   steps:
-   - run: tar -czvf practice.tar.gz /home/anastasia/practice/ #Какая команда выполнится при пуше
+   - run: journalctl -k #Какая команда выполнится при пуше
   
