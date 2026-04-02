@@ -1,0 +1,13 @@
+#Обновление системы
+sudo apt update && apt upgrade -y
+
+
+#Установка инструментов
+sudo apt install -y \
+git \
+curl \
+wget\
+unzip \
+htop \
+tree \
+jq
