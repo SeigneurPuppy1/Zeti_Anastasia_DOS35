@@ -1,2 +1,3 @@
 Глоссарий для этой папки
-1. Вывод скрипта output.sh находится в script_output.txt 
+1. Вывод скрипта output.sh находится в script_output.txt
+2. В файлу commands.txt находится подтверждение наличие команд из задания: htop, mc, tree
