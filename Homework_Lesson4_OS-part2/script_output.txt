@@ -1,0 +1,30 @@
+Дата и время: Wed Apr  8 16:36:21 MSK 2026
+Использоание диска:
+Filesystem      Size  Used Avail Use% Mounted on
+none            8.8G     0  8.8G   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+none            8.8G  4.0K  8.8G   1% /mnt/wsl
+drivers         477G  110G  367G  24% /usr/lib/wsl/drivers
+/dev/sdd       1007G  2.7G  953G   1% /
+none            8.8G   96K  8.8G   1% /mnt/wslg
+none            8.8G     0  8.8G   0% /usr/lib/wsl/lib
+rootfs          8.8G  2.7M  8.8G   1% /init
+none            8.8G  872K  8.8G   1% /run
+none            8.8G     0  8.8G   0% /run/lock
+none            8.8G     0  8.8G   0% /run/shm
+none            8.8G   76K  8.8G   1% /mnt/wslg/versions.txt
+none            8.8G   76K  8.8G   1% /mnt/wslg/doc
+C:\             477G  110G  367G  24% /mnt/c
+snapfuse        2.3M  2.3M     0 100% /snap/bottom/781
+snapfuse         15M   15M     0 100% /snap/cheat/4279
+snapfuse         64M   64M     0 100% /snap/core20/2769
+snapfuse         74M   74M     0 100% /snap/core22/2411
+snapfuse         67M   67M     0 100% /snap/core24/1499
+snapfuse         67M   67M     0 100% /snap/core24/1587
+snapfuse         33M   33M     0 100% /snap/terraform/855
+snapfuse         49M   49M     0 100% /snap/snapd/26382
+snapfuse        1.0M  1.0M     0 100% /snap/dust/19
+tmpfs           1.8G   20K  1.8G   1% /run/user/1000
+Свободная память:
+               total        used        free      shared  buff/cache   available
+Mem:            17Gi       652Mi        16Gi       3.9Mi       321Mi        16Gi
+Swap:          5.0Gi          0B       5.0Gi
