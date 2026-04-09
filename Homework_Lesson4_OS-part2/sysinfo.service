@@ -1,0 +1,10 @@
+#/etc/systemd/system/sysinfo.service
+[Unit]
+Description=system info service
+After=network.target
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/output.sh
+StandardOutput=append:/var/log/sysinfo.log
+[Install]
+WantedBy=multi-user.target
