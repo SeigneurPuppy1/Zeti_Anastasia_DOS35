@@ -1,0 +1,52 @@
+---
+
+- name: Management users and groups
+  hosts: postgresql_server
+  become: true
+
+  vars:
+    user_groups:
+      - name: devops
+      - name: dever
+      - name: developers
+
+    users:
+      - name: anastasia
+        password: "{{ 'password123' | password_hash('sha512') }}"
+        groups: dever
+
+      - name: anna
+        password: "{{ 'password1234' | password_hash('sha512') }}"
+        groups: devops
+
+      - name: alla
+        password: "{{ 'password122' | password_hash('sha512') }}"
+        groups: developers
+
+  tasks:
+    - name: Create group
+      ansible.builtin.group:
+        name: "{{ item.name }}"
+        state: present
+      loop: "{{ user_groups }}"
+
+    - name: Create user and SSH keys
+      ansible.builtin.user:
+        name: "{{ item.name }}"
+        password: "{{ item.password }}"
+        generate_ssh_key: yes
+        ssh_key_type: rsa
+        ssh_key_bits: 4096
+        groups: "{{ item.groups }}"
+        create_home: yes
+        state: present
+      loop: "{{ users }}"
+
+    - name: Access for file
+      ansible.builtin.file:
+        path: /home/{{ item.name }}/inventory
+        state: directory
+        mode: '0655'
+        owner: "{{ item.name }}"
+        group: "{{ item.groups }}"
+      loop: "{{ users }}"
